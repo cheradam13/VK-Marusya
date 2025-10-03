@@ -36,7 +36,7 @@ export const Account = () => {
             return <Loader/>
         case "error":
             return (
-                <BrowserRouter>
+                <BrowserRouter basename={import.meta.env.BASE_URL}>
                     <Header
                         headerBtnNode={
                             <button className="header__login-btn" onClick={handleOnClickHeaderBtn}>Войти</button>
